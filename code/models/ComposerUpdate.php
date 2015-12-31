@@ -5,16 +5,16 @@
    *
    * Used to ensure the same update is not notified multiple times
    */
-  class ComposerUpdate extends DataObject {
+  class ComposerUpdate extends DataObject
+  {
 
-    #region Declarations
+      #region Declarations
 
-    static $db = array(
+    public static $db = array(
       'Name' => 'Varchar(255)',
       'Installed' => 'Varchar(255)',
       'Available' => 'Varchar(255)'
     );
 
     #endregion Declarations
-
   }
